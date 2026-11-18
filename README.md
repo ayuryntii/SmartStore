@@ -1,7 +1,7 @@
 <div align="center">
 
-# 🏪 BAWARA (Sistem Informasi Manajemen Warung)
-### *Enterprise-grade Web-based Warung & Retail POS Management System with Multi-Batch FEFO Inventory & Customer Credit Ledger*
+# 🏪 RetailCore
+### *Enterprise-grade Web-based Retail Point of Sale (POS) & Multi-Batch FEFO Inventory Platform*
 
 [![Laravel](https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
 [![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
@@ -12,8 +12,7 @@
 
 <br/>
 
-**Capstone Project Kelompok 2 • TI23B • Universitas Muhammadiyah Cirebon (UMC)**  
-*Dosen Pengampu: Bapak Sugiyanto, M.Kom.*
+**Developed by Ayu Rianti • Universitas Muhammadiyah Cirebon (UMC)**
 
 </div>
 
@@ -21,18 +20,18 @@
 
 ## 📌 Executive Summary
 
-**BAWARA** (Sistem Informasi Manajemen Warung) adalah platform manajemen operasional dan *Point of Sale* (POS) modern berbasis web yang dirancang khusus untuk mentransformasi tata kelola warung sembako tradisional menjadi ekosistem ritel digital yang efisien, transparan, dan akurat.
+**RetailCore** adalah platform sistem manajemen operasional dan *Point of Sale* (POS) ritel modern berbasis web yang dirancang khusus untuk mentransformasi tata kelola warung dan toko sembako tradisional menjadi ekosistem digital yang efisien, transparan, dan akurat.
 
-Sistem ini memecahkan berbagai tantangan krusial warung konvensional: pencatatan transaksi manual yang rentan selisih, kerugian akibat barang kedaluwarsa tanpa pelacakan batch, piutang pelanggan (kasbon/utang warung) yang tercecer, serta pembelian restok yang tidak terukur. Dilengkapi arsitektur modern Laravel 11, pelacakan inventaris **FEFO (*First Expired, First Out*)**, integrasi **Moving Average Forecasting**, dan modul pencatatan **Buku Utang Pelanggan**, BAWARA menghadirkan solusi operasional *end-to-end* yang ramah pengguna.
+Sistem ini memecahkan berbagai tantangan krusial operasional ritel: pencatatan transaksi manual yang rentan selisih, kerugian akibat barang kedaluwarsa tanpa pelacakan batch, piutang pelanggan (kasbon/utang warung) yang tercecer, serta pembelian restok yang tidak terukur. Dilengkapi arsitektur modern Laravel 11, pelacakan inventaris **FEFO (*First Expired, First Out*)**, integrasi **Moving Average Demand Forecasting**, dan modul pencatatan **Buku Utang Pelanggan**, RetailCore menghadirkan solusi operasional *end-to-end* yang ramah pengguna.
 
 ---
 
 ## 🚀 Key Engineering & Business Features
 
 ### 1. 🛒 Dual-Mode Smart Point of Sale (POS)
-- **High-Velocity Checkout**: Pencarian instan katalog sembako berdasarkan nama dan kode barang (SKU).
+- **High-Velocity Checkout**: Pencarian instan katalog barang sembako berdasarkan nama dan kode barang (SKU).
 - **Dual Payment Workflows**:
-  - **Transaksi Tunai (Cash)**: Kalkulasi subtotal, diskon, dan kembalian secara otomatis dan akurat.
+  - **Transaksi Tunai (Cash)**: Kalkulasi subtotal, diskon, dan uang kembalian secara otomatis dan akurat.
   - **Transaksi Utang (Customer Credit / Kasbon)**: Terintegrasi langsung dengan master pelanggan, batas jatuh tempo (tempo limit), dan penerbitan faktur piutang digital.
 - **Struk Digital & Ringkasan Transaksi**: Bukti transaksi tercatat otomatis ke dalam mutasi kas fisik dan omzet harian.
 
@@ -92,7 +91,7 @@ Sistem dibangun di atas skema relasional teroptimasi:
 
 ## 💻 Getting Started / Installation Guide
 
-Ikuti panduan berikut untuk menjalankan proyek BAWARA di lingkungan lokal:
+Ikuti panduan berikut untuk menjalankan proyek di lingkungan lokal:
 
 ### 1. Prasyarat Sistem
 - PHP >= 8.2 (ekstensi `pdo_mysql`, `mbstring`, `openssl`, `tokenizer`, `xml`, `ctype`, `json`, `curl`)
@@ -102,8 +101,8 @@ Ikuti panduan berikut untuk menjalankan proyek BAWARA di lingkungan lokal:
 
 ### 2. Kloning Repositori
 ```bash
-git clone https://github.com/ayuryntii/BAWARA-SmartPOS-Inventory.git
-cd BAWARA-SmartPOS-Inventory
+git clone https://github.com/ayuryntii/RetailCore.git
+cd RetailCore
 ```
 
 ### 3. Instalasi Dependensi Backend & Frontend
@@ -157,20 +156,14 @@ Aplikasi kini dapat diakses melalui peramban web di: **`http://127.0.0.1:8000`**
 
 ---
 
-## 👥 Tim Pengembang (Kelompok 2 - TI23B)
+## 👩‍💻 Author & Developer
 
-Proyek ini dikembangkan untuk memenuhi Capstone Project mata kuliah Rekayasa Perangkat Lunak / Pemrograman Web Terintegrasi di **Universitas Muhammadiyah Cirebon**:
-
-- **Ayu Rianti** — *Project Lead & Full-Stack Developer*
-- **Reyna Santani** — *System Analyst & Requirements Engineer*
-- **Naylah Tazkiyatul Asna** — *UI/UX Designer & Frontend Specialist*
-- **Klawdia Widareka Julian** — *Quality Assurance & Documentation Lead*
-
-**Dosen Pengampu:**  
-**Bapak Sugiyanto, M.Kom.**
+Developed and maintained by:
+- **Ayu Rianti** ([@ayuryntii](https://github.com/ayuryntii)) — *Lead Software Engineer & Full-Stack Developer*
+- Program Studi Teknik Informatika, Fakultas Teknik, **Universitas Muhammadiyah Cirebon (UMC)**
 
 ---
 
 ## 📄 Lisensi
 
-Didistribusikan di bawah lisensi terbuka [MIT License](LICENSE). Bebas digunakan, dipelajari, dan dikembangkan untuk tujuan edukasi dan peningkatan ekosistem UMKM.
+Didistribusikan di bawah lisensi terbuka [MIT License](LICENSE). Bebas digunakan, dipelajari, dan dikembangkan untuk tujuan edukasi dan peningkatan ekosistem ritel & UMKM.
